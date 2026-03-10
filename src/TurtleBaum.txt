@@ -1,0 +1,16 @@
+;mit calormen.com/jslogo/
+
+TO baum :laenge
+	IF :laenge < 5 [STOP]
+	FORWARD :laenge
+	LEFT 45
+	baum :laenge/2
+	RIGHT 45
+	baum :laenge/2
+	RIGHT 45
+	baum :laenge/2
+	LEFT 45
+	BACK :laenge
+END
+CLEARSCREEN
+baum 80 
